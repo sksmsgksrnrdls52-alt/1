@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Edge of Descension - Stuncaster 3.0</name>
+	<description>Descend into madness, crave violence and avenge yourself from your past mistakes.
+
+Stuncaster returns! Now with enhanced abilities and features, rewarding the stuncaster with power that scales with their psychic sensitivity.
+
+Reign supreme by psychically freezing the perceptions of all but yourself, unlocking oppurtunities in the midst of the chaos, as only you can move and act.</description>
+	<author>Rabbit</author>
+	<packageId>Rabbit.eodstuncasterv3</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>VanillaExpanded.VPsycastsE</packageId>
+			<displayName>Vanilla Psycasts Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2842840009</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+		<loadAfter>
+		<li>VanillaExpanded.VPsycastsE</li>
+	</loadAfter>
+</ModMetaData>

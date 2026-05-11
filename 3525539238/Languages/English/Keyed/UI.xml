@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+    <VPE.StunskipIsActive>Restrain is currently active.</VPE.StunskipIsActive>
+	<VPE.CancelStunskip>Cancel Restrain</VPE.CancelStunskip>
+	<VPE.CancelStunskipDesc>Click to cancel Restrain.</VPE.CancelStunskipDesc>
+	
+	<VPE.CancelDeception>Cancel Elusion</VPE.CancelDeception>
+	<VPE.CancelDeceptionDesc>Click to cancel Elusion.</VPE.CancelDeceptionDesc>
+	
+	<VPE.CancelEvasion>Cancel Evasion</VPE.CancelEvasion>
+	<VPE.CancelEvasionDesc>Click to cancel Evasion.</VPE.CancelEvasionDesc>
+	
+</LanguageData>

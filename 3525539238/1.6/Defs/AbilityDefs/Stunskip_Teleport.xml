@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipBase">
+		<defName>VPE_stunskip_teleport_ii</defName>
+		<label>stunstep</label>
+		<description>Stuns the world's perception while moving towards a short destination. This creates the illusion of teleportation, avoiding any incoming projectiles. The range scales with the caster's move speed.</description>
+		<iconPath>Abilities/stunskip_teleport_2</iconPath>
+		<abilityClass>Stunskip.Stunskip_Teleport</abilityClass>
+		<range>5.4</range>
+		<rangeStatOffsets>
+        <MoveSpeed>1</MoveSpeed>
+        </rangeStatOffsets>
+		<needsTicking>true</needsTicking>
+		<castSound>VPEStunskip_Teleport</castSound>
+		<castTime>10</castTime>
+		<castTimeStatOffsets>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+		</castTimeStatOffsets>
+		<cooldownTime>180</cooldownTime>
+		<cooldownTimeStatOffsets>
+			<PsychicSensitivity>-15</PsychicSensitivity>
+		</cooldownTimeStatOffsets>
+		<targetMode>Location</targetMode>
+		<showUndrafted>true</showUndrafted>
+		
+		<targetingParameters Class="VEF.Abilities.TargetingParametersForAoE">
+			<canTargetLocations>true</canTargetLocations>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetBlockedLocations>false</canTargetBlockedLocations>
+		</targetingParameters>
+		<castFleck>AirPuff</castFleck>
+		<castFleckScale>3</castFleckScale>
+		<modExtensions>
+		<li Class="Stunskip.AbilityExtension_StunskipCooldown">	
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
+			<onCaster>
+				<li>VPE_ProjectilePatch</li>
+			</onCaster>
+			<durationTimeOverride>90</durationTimeOverride>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
+				<onCaster>
+				<li>VPE_stuncaster</li>
+				</onCaster>
+			</li>
+		<li Class="VEF.Abilities.AbilityExtension_ScreenShaker">
+			<intensity>2</intensity>
+		</li>
+        <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>5</level>
+          <order>1</order>
+          <psyfocusCost>0.05</psyfocusCost>
+          <entropyGain>10</entropyGain>
+          <prerequisites>
+            <li>VPE_stunskip_restrain_i</li>
+          </prerequisites>
+        </li>
+		<li Class="VanillaPsycastsExpanded.Skipmaster.AbilityExtension_Clamor">
+			<clamorType>Ability</clamorType>
+			<clamorRadius>1.9</clamorRadius>
+		</li>
+		</modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>VPEStunskipPath</defName>
+        <label>stuncaster</label>
+        <description>Stuncaster path is a special path locked only for Archotechnology-focused psycasters. It allows the ablity to psychically manipulate the perception of the world to your advantage.</description>
+        <background>PathBackgrounds/StunskipVPE</background>
+        <altBackground>PathBackgrounds/StunskipVPEAlt</altBackground>
+        <tab>Psycasts</tab>
+        <tooltip>Illusive and tactical, stuncasters are imbued with deceptive archotech capabilities that allows for the manipulation of the world's perceptivity. Stuncasters can supercharge their perception, manipulate air with psychic precision and even stun the world for only they can act during the frozen chaos.</tooltip>
+		<lockedReason>Archotech focus</lockedReason>
+		<requiredFocus>VPE_Archotech</requiredFocus>
+		<ignoreLockRestrictionsForNeurotrainers>false</ignoreLockRestrictionsForNeurotrainers>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+	
+</Defs>

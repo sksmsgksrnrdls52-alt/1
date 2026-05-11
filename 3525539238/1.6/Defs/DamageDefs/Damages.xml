@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+	<DamageDef ParentName="BluntBase">
+		<defName>VPEStunskip_Air_Barrage_DamageDef</defName>
+		<deathMessage>{0} has been smashed to death.</deathMessage>
+		<label>air thrust impact</label>
+		<workerClass>Stunskip.DamageWorker_KnockbackAttack</workerClass>
+		<buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
+		<modExtensions>
+			<li Class="VEF.Weapons.DamageExtension">
+				<pushBackDistance>1</pushBackDistance>
+				<soundOnDamage>VPEStunskip_Air_Barrage_Damage</soundOnDamage>
+				<fleckOnDamage>AirPuff</fleckOnDamage>
+				<fleckRadius>3</fleckRadius>
+				<fleckOnInstigator>false</fleckOnInstigator>
+			</li>
+		</modExtensions>
+	</DamageDef>
+	
+	<DamageDef ParentName="BluntBase">
+		<defName>VPEStunskip_Air_Javelin_DamageDef</defName>
+		<deathMessage>{0} has been smashed to death.</deathMessage>
+		<label>air javelin impact</label>
+		<workerClass>Stunskip.DamageWorker_KnockbackAttack</workerClass>
+		<buildingDamageFactorImpassable>12</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>6</buildingDamageFactorPassable>
+		<modExtensions>
+			<li Class="VEF.Weapons.DamageExtension">
+				<pushBackDistance>10</pushBackDistance>
+				<soundOnDamage>VPEStunskip_Air_Barrage_Damage</soundOnDamage>
+				<fleckOnDamage>AirPuff</fleckOnDamage>
+				<fleckRadius>5</fleckRadius>
+				<fleckOnInstigator>false</fleckOnInstigator>
+			</li>
+		</modExtensions>
+	</DamageDef>
+	
+</Defs> 
+	

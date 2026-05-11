@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipBase">
+		<defName>VPE_stunskip_strike_ii</defName>
+		<label>stunstrike</label>
+		<description>Stuns the world's perception while moving towards a nearby target, striking them with exceptional damage. This creates the illusion of teleportation, damaging the target and pushing them several meters away on impact. The range scales with the caster's move speed.</description>
+		<abilityClass>Stunskip.Stunskip_Strike_ii</abilityClass>
+		<iconPath>Abilities/stunskip_strike_2</iconPath>
+		<targetCount>1</targetCount>
+		<range>5.4</range>
+        <rangeStatOffsets>
+        <MoveSpeed>1</MoveSpeed>
+        </rangeStatOffsets>
+		<castSound>VPEStunskip_Strike</castSound>
+		<castTime>30</castTime>
+		<castTimeStatOffsets>
+			<PsychicSensitivity>-2</PsychicSensitivity>
+		</castTimeStatOffsets>
+		<durationTime>30</durationTime>
+		<power>1</power>
+		<powerStatFactors>
+		<PsychicSensitivity>3</PsychicSensitivity>
+		</powerStatFactors>
+		<cooldownTime>300</cooldownTime>
+		<cooldownTimeStatOffsets>
+			<PsychicSensitivity>-20</PsychicSensitivity>
+		</cooldownTimeStatOffsets>
+		<targetMode>Pawn</targetMode>
+		<needsTicking>true</needsTicking>
+		<castFleck>AirPuff</castFleck>
+		<castFleckScale>3</castFleckScale>
+		<fleckOnTarget>VPE_Stunskip_Distortion</fleckOnTarget>
+		<fleckOnTargetScale>2.5</fleckOnTargetScale>
+		
+		<modExtensions>
+		<li Class="Stunskip.AbilityExtension_StunskipCooldown">	
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
+			<onCaster>
+				<li>VPE_ProjectilePatch</li>
+			</onCaster>
+			<durationTimeOverride>90</durationTimeOverride>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
+				<onCaster>
+				<li>VPE_stuncaster</li>
+				</onCaster>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Hediff">
+				<applyToCaster>false</applyToCaster>
+				<hediff>VPE_PerceptionFreeze</hediff>
+			</li>
+		<li Class="VEF.Abilities.AbilityExtension_ScreenShaker">
+			<intensity>8</intensity>
+		</li>
+        <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>5</level>
+          <order>3</order>
+          <psyfocusCost>0.10</psyfocusCost>
+          <entropyGain>15</entropyGain>
+          <prerequisites>
+            <li>VPE_stunskip_restrain_i</li>
+          </prerequisites>
+        </li>
+		<li Class="VanillaPsycastsExpanded.Skipmaster.AbilityExtension_Clamor">
+			<clamorType>Harm</clamorType>
+			<clamorRadius>10</clamorRadius>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Stun">
+			<stunTicks>180</stunTicks>
+		</li>
+		</modExtensions>
+    </VEF.Abilities.AbilityDef>
+	
+</Defs>

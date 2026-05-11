@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipBase">
+      <defName>VPE_EnhancedPerception</defName>
+      <label>enhanced perception</label>
+      <description>Psychically enhanced perception supercharges one's conciousness, effectively increasing the caster's combat attack speed and focus by an insane amount at the cost of significantly reduced damage. Duration scales with psychic sensitivity of the caster.</description>
+      <iconPath>Abilities/stunskip_enhanced_perception</iconPath>
+	  <castSound>VPEStunskip_EnhancedPerception</castSound>
+	  <cooldownTime>1200</cooldownTime>
+	  <!--<warmupSound>VPE_PsycastCastingEffect</warmupSound>-->
+	  <targetMode>Self</targetMode>
+	  <castTime>30</castTime>
+	  <castTimeStatOffsets>
+			<PsychicSensitivity>-2</PsychicSensitivity>
+		</castTimeStatOffsets>
+	  <castFleck>PsycastPsychicEffect</castFleck>
+	  <showUndrafted>false</showUndrafted>
+	  <durationTime>600</durationTime>
+	  <durationTimeStatFactors>
+      <PsychicSensitivity>1</PsychicSensitivity>
+	  </durationTimeStatFactors>	  
+	  <abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+      <modExtensions>
+        <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+		  <level>1</level>
+		  <order>2</order>
+          <psyfocusCost>0.09</psyfocusCost>
+          <entropyGain>18</entropyGain>
+        </li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_EnhancedPerception</hediff>
+		</li>
+      </modExtensions>
+    </VEF.Abilities.AbilityDef> 
+	
+	<HediffDef ParentName="PsycastHediffBase">
+		<defName>VPE_EnhancedPerception</defName>
+		<label>enhanced perception</label>
+		<description>Psychically enhanced perception, improving multiple elements of one's combat capabilities.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeCooldownFactor>0.2</MeleeCooldownFactor>
+					<MeleeDamageFactor>0.5</MeleeDamageFactor>
+					<RangedCooldownFactor>0.5</RangedCooldownFactor>
+					<VEF_RangeAttackDamageFactor>0.5</VEF_RangeAttackDamageFactor>
+					<VEF_VerbRangeFactor>2</VEF_VerbRangeFactor>
+					<GlobalLearningFactor>2</GlobalLearningFactor>	
+				</statFactors>
+				<capMods>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.2</offset>
+				</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>VPE_SparksRed</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

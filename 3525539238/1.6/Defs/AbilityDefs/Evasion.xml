@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipBase">
+      <defName>VPE_evasion</defName>
+      <label>evasion</label>
+      <description>Supercharges the caster's senses, increasing their awareness to heightened levels. This lets the caster dodge incoming projectiles and melee hits relatively easily with the cost of slowed movements due to the sheer amount of focus the caster needed. It last for as long as the caster can hold it.</description>
+      <iconPath>Abilities/evasion</iconPath>
+	  <abilityClass>Stunskip.Ability_Evasion</abilityClass>
+	  <targetMode>Self</targetMode>
+	  <castFleck>PsycastPsychicEffect</castFleck>
+	  <castSound>VPEStunskip_Evasion</castSound>
+	  <showUndrafted>true</showUndrafted>
+	  <cooldownTime>1200</cooldownTime>
+	  <cooldownTimeStatOffsets>
+			<PsychicSensitivity>-20</PsychicSensitivity>
+	  </cooldownTimeStatOffsets>
+	  <castTime>30</castTime>
+	  <castTimeStatOffsets>
+			<PsychicSensitivity>-2</PsychicSensitivity>
+		</castTimeStatOffsets>
+      <modExtensions>
+        <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>3</level>
+          <order>3</order>
+          <psyfocusCost>0.15</psyfocusCost>
+          <entropyGain>50</entropyGain>
+          <prerequisites>
+            <li>VPE_Air_Barrage</li>
+          </prerequisites>
+        </li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_EvasionHediff</hediff>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_ScreenShaker">
+			<intensity>1</intensity>
+		</li>
+      </modExtensions>
+    </VEF.Abilities.AbilityDef>
+	
+	
+	
+	<HediffDef>
+		<defName>VPE_EvasionHediff</defName>
+		<label>psychic evasion</label>
+		<description>Psychically alter the perception of this individual and supercharges their senses to avoid being hit by projectiles and melee attacks.</description>
+		<hediffClass>Stunskip.Hediff_Evasion</hediffClass>
+		<defaultLabelColor>(251, 174, 210)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>75</MeleeDodgeChance>
+					<MoveSpeed>-2</MoveSpeed>
+				</statOffsets>
+				<capMods>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.2</offset>
+				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.2</offset>
+				</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="VanillaPsycastsExpanded.Graphics.HediffCompProperties_Mote">
+				<compClass>VanillaPsycastsExpanded.Graphics.HediffComp_MoteOverHead</compClass>
+				<mote>VPE_Mote_CastPsycast</mote>
+				<color>(1, 0, 0)</color>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>VPE_SparksWhite</stateEffecter>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDowned"/>
+			<li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDespawn"/>
+		</comps>
+	</HediffDef>
+	
+</Defs>

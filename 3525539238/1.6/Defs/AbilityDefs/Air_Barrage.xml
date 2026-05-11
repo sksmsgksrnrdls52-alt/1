@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+    <defName>VPE_Air_Barrage_Projectile</defName>
+    <thingClass>VEF.Abilities.AbilityProjectile</thingClass>
+    <label>air thrust</label>
+	<description>An air thrust in high velocity, resulting in a high damaging strike.</description>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>VisEffects</altitudeLayer>
+	<drawOffscreen>true</drawOffscreen>
+    <graphicData>
+		<texPath>Effects/air_barrage_projectile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	<projectile>
+		<extraDamages>
+		<li>
+         <def>Stun</def>
+         <amount>3</amount>
+		</li>
+		</extraDamages>
+		<damageAmountBase>4</damageAmountBase>
+		<damageDef>VPEStunskip_Air_Barrage_DamageDef</damageDef>
+		<stoppingPower>1</stoppingPower>
+		<speed>65</speed>
+	</projectile>
+	<comps>
+		<li Class="VanillaPsycastsExpanded.CompProperties_FleckEmitter">
+		 <fleck>VPE_Stunskip_AirPuff</fleck>
+		 <emissionInterval>1</emissionInterval>
+		 <scale>0.75</scale>
+		</li>
+	</comps>
+	</ThingDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_Stunskip_Barrage_Base">
+		<defName>VPE_Air_Barrage</defName>
+		<label>air thrust</label>
+		<description>Thrust the air with high velocity with the help of psychically-enhanced aerodynamic manipulation, resulting in a short-range, low damage strike. A psychically-stronger psycaster will cast more projectiles with higher damage.</description>
+		<iconPath>Abilities/stunskip_air_barrage</iconPath>
+		<abilityClass>Stunskip.Stunskip_ShootProjectile</abilityClass>
+		<needsTicking>True</needsTicking>
+		<castTime>30</castTime>
+		<castTimeStatOffsets>
+			<PsychicSensitivity>-5</PsychicSensitivity>
+		</castTimeStatOffsets>
+		<castSound>VPEStunskip_Air_Barrage</castSound>
+		<cooldownTime>180</cooldownTime>
+		<cooldownTimeStatOffsets>
+			<PsychicSensitivity>-15</PsychicSensitivity>
+		</cooldownTimeStatOffsets>
+		<showUndrafted>true</showUndrafted>
+		<range>3.9</range>
+		<targetingParameters>
+          <canTargetPawns>true</canTargetPawns>
+          <canTargetBuildings>true</canTargetBuildings>
+		  <canTargetMechs>true</canTargetMechs>
+	  </targetingParameters>
+	  <power>4</power>
+	  <powerStatFactors>
+        <PsychicSensitivity>1</PsychicSensitivity>
+      </powerStatFactors>  
+	  <targetMode>Pawn</targetMode>
+	   <modExtensions>
+        <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>2</level>
+          <order>2</order>
+          <psyfocusCost>0.09</psyfocusCost>
+          <entropyGain>18</entropyGain>
+		  <prerequisites>
+            <li>VPE_EnhancedPerception</li>
+          </prerequisites>
+        </li>
+        <li Class="VEF.Abilities.AbilityExtension_Projectile">
+          <projectile>VPE_Air_Barrage_Projectile</projectile>
+		  <accuracyStatFactors>
+			<PsychicSensitivity>1</PsychicSensitivity>
+		  </accuracyStatFactors>
+        </li>
+      </modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+</Defs>

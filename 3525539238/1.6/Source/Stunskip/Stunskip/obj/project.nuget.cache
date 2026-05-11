@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fIfQgoucuIg=",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\StunSkip\\Stunskip.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fat'hi\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4511-beta\\krafs.rimworld.ref.1.6.4511-beta.nupkg.sha512",
+    "C:\\Users\\Fat'hi\\.nuget\\packages\\lib.harmony\\2.3.6\\lib.harmony.2.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipBase">
+		<defName>VPE_stunskip_restrain_i</defName>
+		<label>Restrain</label>
+		<description>In an instant, momentarily stuns the world and every creature including foes, allies and animals in the whole map except for the caster for 5 seconds. This ability exhausts the caster's energy quickly while inducing a lot of heat over time, but can be cancelled at any point.</description>
+		<iconPath>Abilities/stunskip_restrain_1</iconPath>
+		<abilityClass>Stunskip.Ability_Restrain</abilityClass>
+		<castSound>VPEStunskip_Sound</castSound>
+		<castTime>7</castTime>
+		<cooldownTime>600</cooldownTime>
+		<targetMode>Self</targetMode>
+		<hasAoE>true</hasAoE>
+		<targetingParametersForAoE>
+			<canTargetSelf>True</canTargetSelf>
+			<neverTargetIncapacitated>true</neverTargetIncapacitated>
+		</targetingParametersForAoE>
+		<durationTime>360</durationTime>
+		<castFleck>VPE_Stunscast_Effect1</castFleck>
+		<castFleckScale>999</castFleckScale>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+            <li Class="Stunskip.AbilityExtension_StunskipCooldown"/>
+			<li Class="VEF.Abilities.AbilityExtension_ScreenShaker">
+				<intensity>30</intensity>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Hediff">
+				<applyToCaster>true</applyToCaster>
+				<hediff>VPE_StunskipWorld</hediff>
+			</li>
+				<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
+				<onCaster>
+					<li>VPE_stuncaster</li>
+				</onCaster>
+				</li>
+			<li Class="VEF.Abilities.AbilityExtension_FleckOnTarget">
+				<fleckDefs>
+					<li>VPE_Stunscast_Effect2</li>
+				</fleckDefs>
+				<scale>25</scale>
+				<preCastTicks>6</preCastTicks>
+			</li>
+		  <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>4</level>
+          <order>2</order>
+          <psyfocusCost>0.05</psyfocusCost>
+          <entropyGain>50</entropyGain>
+		  <prerequisites>
+            <li>VPE_deception</li>
+			<li>VPE_evasion</li>	
+          </prerequisites>
+          </li>
+		</modExtensions>
+    </VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipWorld">
+		<defName>VPE_stunskip_restrain_ii</defName>
+		<label>Greater Restrain</label>
+		<description>Stuns the world and every creature including foes, allies and animals in the whole map except for the caster for 10 seconds. This ability exhausts the caster's energy quickly while inducing a lot of heat over time, but can be cancelled at any point. The duration scales with psychic sensitivity.</description>
+		<iconPath>Abilities/stunskip_restrain_2</iconPath>
+		<castSound>VPEStunskip_Sound</castSound>
+		<castTime>90</castTime>
+		<cooldownTime>1800</cooldownTime>
+		<cooldownTimeStatOffsets>
+			<PsychicSensitivity>100</PsychicSensitivity>
+		</cooldownTimeStatOffsets>
+		<targetMode>Self</targetMode>
+		<hasAoE>true</hasAoE>
+		<targetingParametersForAoE>
+			<canTargetSelf>True</canTargetSelf>
+			<neverTargetIncapacitated>true</neverTargetIncapacitated>
+		</targetingParametersForAoE>
+		<durationTime>600</durationTime>
+		<durationTimeStatOffsets>
+			<PsychicSensitivity>100</PsychicSensitivity>
+		</durationTimeStatOffsets>	
+		<castFleck>VPE_Stunscast_Effect1</castFleck>
+		<castFleckScale>999</castFleckScale>		
+		<modExtensions>
+		    <li Class="Stunskip.AbilityExtension_StunskipCooldown"/>
+			<li Class="VEF.Abilities.AbilityExtension_ScreenShaker">
+				<intensity>30</intensity>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Hediff">
+				<applyToCaster>true</applyToCaster>
+					<hediff>VPE_StunskipWorld</hediff>
+				</li>
+			<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
+				<onCaster>
+					<li>VPE_stuncaster</li>
+				</onCaster>
+				</li>
+			<li Class="VEF.Abilities.AbilityExtension_FleckOnTarget">
+				<fleckDefs>
+					<li>VPE_Stunscast_Effect2</li>
+				</fleckDefs>
+				<scale>250</scale>
+				<preCastTicks>7</preCastTicks>
+			</li>
+		  <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>5</level>
+          <order>2</order>
+          <psyfocusCost>0.10</psyfocusCost>
+          <entropyGain>50</entropyGain>
+          <prerequisites>
+            <li>VPE_stunskip_restrain_i</li>
+          </prerequisites>
+        </li>
+		</modExtensions>
+    </VEF.Abilities.AbilityDef>
+	
+	
+	<HediffDef>
+		<defName>VPE_StunskipWorld</defName>
+		<label>World of Restrain</label>
+		<description>The world's perception is frozen. Only you can act in this world.</description>
+		<defaultLabelColor>(211, 211, 211)</defaultLabelColor>
+		<hediffClass>Stunskip.Hediff_Restrain</hediffClass>
+		<isBad>False</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>20</RestFallRateFactor>
+					<StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">0</StaggerDurationFactor>
+				</statFactors>
+				<statOffsets>
+					<ArrestSuccessChance>0.75</ArrestSuccessChance>
+					<WorkSpeedGlobal>0.75</WorkSpeedGlobal>
+					<GeneralLaborSpeed>0.75</GeneralLaborSpeed>
+				</statOffsets>
+				<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.2</offset>
+				</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Stunskip.Stunskip_ApplyPerceptionFreeze"/>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+		    </li>
+		    <li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDowned"/>
+			<li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDespawn"/>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>VPE_Stunskip_AirPuffEffecter</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

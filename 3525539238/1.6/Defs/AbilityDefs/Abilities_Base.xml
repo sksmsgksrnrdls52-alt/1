@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VEF.Abilities.AbilityDef Name="VPEStunskipBase" Abstract="True">
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<!--<warmupSound>VPE_PsycastCastingEffect</warmupSound>-->
+		<warmupMote>VPE_Mote_CastPsycast</warmupMote>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef Name="VPEStunskipWorld" Abstract="True">
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<warmupSound>VPEStunskip_Cast</warmupSound>
+		<!--<warmupSound>VPE_PsycastCastingEffect</warmupSound>-->
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef Name="VPE_Stunskip_Barrage_Base" Abstract="True">
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<!--<warmupSound>VPE_PsycastCastingEffect</warmupSound>-->
+	</VEF.Abilities.AbilityDef>
+	
+</Defs>

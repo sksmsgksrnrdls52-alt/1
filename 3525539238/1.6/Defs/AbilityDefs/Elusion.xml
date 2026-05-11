@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipBase">
+      <defName>VPE_deception</defName>
+      <label>elusion</label>
+      <description>Psychically manipulate the perception of the world, rendering everyone to not be able to perceive the caster for as long as the caster can hold it. Any singular hit they land during this period has its damage multiplied tenfold, but it will break the illusion.</description>
+      <iconPath>Abilities/elusion</iconPath>
+	  <abilityClass>Stunskip.Ability_Deception</abilityClass>
+	  <targetMode>Self</targetMode>
+	  <castFleck>VPE_Deception_World_Distort</castFleck>
+	  <castFleckScale>3</castFleckScale>
+	  <castSound>VPEStunskip_Deception</castSound>
+	  <showUndrafted>true</showUndrafted>
+	  <cooldownTime>1200</cooldownTime>
+	  <cooldownTimeStatOffsets>
+			<PsychicSensitivity>-20</PsychicSensitivity>
+	  </cooldownTimeStatOffsets>
+	  <castTime>30</castTime>
+	  <castTimeStatOffsets>
+			<PsychicSensitivity>-2</PsychicSensitivity>
+		</castTimeStatOffsets>
+      <modExtensions>
+        <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>3</level>
+          <order>1</order>
+          <psyfocusCost>0.15</psyfocusCost>
+          <entropyGain>50</entropyGain>
+          <prerequisites>
+            <li>VPE_Air_Barrage</li>
+          </prerequisites>
+        </li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_DeceptionHediff</hediff>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_ScreenShaker">
+			<intensity>2</intensity>
+		</li>
+      </modExtensions>
+    </VEF.Abilities.AbilityDef>
+	
+	
+	
+	<HediffDef>
+		<defName>VPE_DeceptionHediff</defName>
+		<label>psychic elusion</label>
+		<description>Psychically alter the perception of the world and rendering this person as invisible. Allows for a single fatal blow during the illusion.</description>
+		<hediffClass>Stunskip.Hediff_Deception</hediffClass>
+		<defaultLabelColor>(251, 174, 210)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<VEF_MeleeAttackDamageFactor>10</VEF_MeleeAttackDamageFactor>
+					<VEF_RangeAttackDamageFactor>10</VEF_RangeAttackDamageFactor>
+					<MeleeHitChance>3</MeleeHitChance>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="VanillaPsycastsExpanded.Graphics.HediffCompProperties_Mote">
+				<compClass>VanillaPsycastsExpanded.Graphics.HediffComp_MoteOverHead</compClass>
+				<mote>VPE_Mote_CastPsycast_Red</mote>
+				<color>(1, 0, 0)</color>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDowned"/>
+			<li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDespawn"/>
+			<li>
+				<compClass>VanillaPsycastsExpanded.Nightstalker.HediffComp_DissapearsOnAttack</compClass>
+			</li>
+			<li Class="HediffCompProperties_Invisibility">
+				<visibleToPlayer>true</visibleToPlayer>
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

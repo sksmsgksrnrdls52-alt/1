@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\edge of descension - stuncaster 3.0 (latest)\\1.6\\source\\stunskip\\stunskip\\harmonypatches\\stunskipworld.patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\harmonypatches\\stunskipworld.patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskipdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskipdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskip_teleport_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskip_teleport_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\harmonypatches\\stunskip.patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\harmonypatches\\stunskip.patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskip_perceptionfreeze_hediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskip_perceptionfreeze_hediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskipworld\\ability_gizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskipworld\\ability_gizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\AbilityExtension_StunskipCooldown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:Stunskip\\StunskipWorld\\AbilityExtension_StunskipCooldown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskipworld\\checkstunskip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskipworld\\checkstunskip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskipworld\\hediff_heatovertime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskipworld\\hediff_heatovertime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskipworld\\isstunskipworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskipworld\\isstunskipworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskip_damageworker_knockbackattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskip_damageworker_knockbackattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskip_projectilewithfleck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskip_projectilewithfleck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskip_shootprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskip_shootprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskip_strike_ii.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskip_strike_ii.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\stunskip_teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\stunskip_teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\stunskip\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851C6A8F-D3B9-4E87-AB30-468B1B5CC648}|StunSkip\\Stunskip.csproj|solutionrelative:stunskip\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StunskipWorld.Patch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\HarmonyPatches\\StunskipWorld.Patch.cs",
+              "RelativeDocumentMoniker": "Stunskip\\HarmonyPatches\\StunskipWorld.Patch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\HarmonyPatches\\StunskipWorld.Patch.cs",
+              "RelativeToolTip": "Stunskip\\HarmonyPatches\\StunskipWorld.Patch.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAAmwFQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ability_Gizmo.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\Ability_Gizmo.cs",
+              "RelativeDocumentMoniker": "Stunskip\\StunskipWorld\\Ability_Gizmo.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\Ability_Gizmo.cs",
+              "RelativeToolTip": "Stunskip\\StunskipWorld\\Ability_Gizmo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Stunskip_PerceptionFreeze_Hediff.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_PerceptionFreeze_Hediff.cs",
+              "RelativeDocumentMoniker": "Stunskip\\Stunskip_PerceptionFreeze_Hediff.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_PerceptionFreeze_Hediff.cs",
+              "RelativeToolTip": "Stunskip\\Stunskip_PerceptionFreeze_Hediff.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCIAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stunskip.Patch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\HarmonyPatches\\Stunskip.Patch.cs",
+              "RelativeDocumentMoniker": "Stunskip\\HarmonyPatches\\Stunskip.Patch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\HarmonyPatches\\Stunskip.Patch.cs",
+              "RelativeToolTip": "Stunskip\\HarmonyPatches\\Stunskip.Patch.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAMwD0AAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Hediff_HeatOverTime.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\Hediff_HeatOverTime.cs",
+              "RelativeDocumentMoniker": "Stunskip\\StunskipWorld\\Hediff_HeatOverTime.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\Hediff_HeatOverTime.cs",
+              "RelativeToolTip": "Stunskip\\StunskipWorld\\Hediff_HeatOverTime.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAA/wA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T18:42:19.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Stunskip_Teleport_Base.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_Teleport_Base.cs",
+              "RelativeDocumentMoniker": "Stunskip\\Stunskip_Teleport_Base.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_Teleport_Base.cs",
+              "RelativeToolTip": "Stunskip\\Stunskip_Teleport_Base.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StunskipDefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipDefOf.cs",
+              "RelativeDocumentMoniker": "Stunskip\\StunskipDefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipDefOf.cs",
+              "RelativeToolTip": "Stunskip\\StunskipDefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CheckStunskip.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\CheckStunskip.cs",
+              "RelativeDocumentMoniker": "Stunskip\\StunskipWorld\\CheckStunskip.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\CheckStunskip.cs",
+              "RelativeToolTip": "Stunskip\\StunskipWorld\\CheckStunskip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:51:49.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AbilityExtension_StunskipCooldown.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\AbilityExtension_StunskipCooldown.cs",
+              "RelativeDocumentMoniker": "Stunskip\\StunskipWorld\\AbilityExtension_StunskipCooldown.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\AbilityExtension_StunskipCooldown.cs",
+              "RelativeToolTip": "Stunskip\\StunskipWorld\\AbilityExtension_StunskipCooldown.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "isStunskipWorld.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\isStunskipWorld.cs",
+              "RelativeDocumentMoniker": "Stunskip\\StunskipWorld\\isStunskipWorld.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\StunskipWorld\\isStunskipWorld.cs",
+              "RelativeToolTip": "Stunskip\\StunskipWorld\\isStunskipWorld.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:12:05.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Stunskip_DamageWorker_KnockbackAttack.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_DamageWorker_KnockbackAttack.cs",
+              "RelativeDocumentMoniker": "Stunskip\\Stunskip_DamageWorker_KnockbackAttack.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_DamageWorker_KnockbackAttack.cs",
+              "RelativeToolTip": "Stunskip\\Stunskip_DamageWorker_KnockbackAttack.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwBIAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T12:59:40.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Stunskip_ProjectileWithFleck.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\StunSkip\\Stunskip_ProjectileWithFleck.cs",
+              "RelativeDocumentMoniker": "StunSkip\\Stunskip_ProjectileWithFleck.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\StunSkip\\Stunskip_ProjectileWithFleck.cs",
+              "RelativeToolTip": "StunSkip\\Stunskip_ProjectileWithFleck.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T19:36:52.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Stunskip_ShootProjectile.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_ShootProjectile.cs",
+              "RelativeDocumentMoniker": "Stunskip\\Stunskip_ShootProjectile.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_ShootProjectile.cs",
+              "RelativeToolTip": "Stunskip\\Stunskip_ShootProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:15:05.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Stunskip_Strike_ii.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_Strike_ii.cs",
+              "RelativeDocumentMoniker": "Stunskip\\Stunskip_Strike_ii.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_Strike_ii.cs",
+              "RelativeToolTip": "Stunskip\\Stunskip_Strike_ii.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Stunskip_Teleport.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_Teleport.cs",
+              "RelativeDocumentMoniker": "Stunskip\\Stunskip_Teleport.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Stunskip_Teleport.cs",
+              "RelativeToolTip": "Stunskip\\Stunskip_Teleport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:38:18.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Stunskip\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Edge of Descension - Stuncaster 3.0 (Latest)\\1.6\\Source\\Stunskip\\Stunskip\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Stunskip\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T04:28:47.863Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

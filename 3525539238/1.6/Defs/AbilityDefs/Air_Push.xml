@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VEF.Abilities.AbilityDef ParentName="VPEStunskipBase">
+		<defName>VPE_air_push</defName>
+		<label>air push</label>
+		<description>Controlling the airwaves around the caster with enhanced manipulation, pushing the target to a designated location away from its original position, avoiding all harm directed towards the original location. A psychically-stronger psycaster will result in more range.</description>
+		<iconPath>Abilities/stunskip_air_push</iconPath>
+		<abilityClass>Stunskip.Stunskip_Teleport_Base</abilityClass>
+		<range>5.9</range>
+		<rangeStatOffsets>
+        <PsychicSensitivity>2</PsychicSensitivity>
+        </rangeStatOffsets>
+		<needsTicking>true</needsTicking>
+		<castSound>VPEStunskip_Air_Push</castSound>
+		<cooldownTime>180</cooldownTime>
+		<cooldownTimeStatOffsets>
+			<PsychicSensitivity>-15</PsychicSensitivity>
+		</cooldownTimeStatOffsets>
+		<castTime>12</castTime>
+		<castTimeStatOffsets>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+		</castTimeStatOffsets>
+		<showUndrafted>true</showUndrafted>
+		<targetCount>2</targetCount>
+		<targetModes>
+      <li>Pawn</li>
+      <li>Location</li>
+		</targetModes>
+		<targetingParametersList>
+      <li>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetPawns>True</canTargetPawns>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetItems>False</canTargetItems>
+      </li>
+      <li Class="VEF.Abilities.TargetingParametersForAoE">
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetBlockedLocations>false</canTargetBlockedLocations>
+      </li>
+		</targetingParametersList>
+		<modExtensions>
+			<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
+			<onTarget>
+				<li>VPE_ProjectilePatch</li>
+			</onTarget>
+			<durationTimeOverride>120</durationTimeOverride>
+			</li>
+		<li Class="VEF.Abilities.AbilityExtension_ScreenShaker">
+			<intensity>2</intensity>
+			</li>
+        <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+          <path>VPEStunskipPath</path>
+          <level>2</level>
+          <order>1</order>
+          <psyfocusCost>0.05</psyfocusCost>
+          <entropyGain>20</entropyGain>
+          <prerequisites>
+            <li>VPE_EnhancedPerception</li>
+          </prerequisites>
+        </li>
+		<li Class="VEF.Abilities.AbilityExtension_FleckOnTarget">
+          <fleckDefs>
+            <li>AirPuff</li>
+          </fleckDefs>
+          <scale>3</scale>
+        </li>
+		<li Class="VanillaPsycastsExpanded.Skipmaster.AbilityExtension_Clamor">
+        <clamorType>Ability</clamorType>
+        <clamorRadius>10</clamorRadius>
+      </li>
+	  <li Class="VEF.Abilities.AbilityExtension_Stun">
+        <stunTicks>60</stunTicks>
+      </li>
+		</modExtensions>
+    </VEF.Abilities.AbilityDef>
+	
+</Defs>

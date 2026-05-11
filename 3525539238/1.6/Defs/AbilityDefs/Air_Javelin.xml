@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">    
+	<defName>VPE_Air_Javelin_Projectile</defName>
+	<thingClass>Stunskip.Stunskip_ProjectileWithFleck</thingClass>
+	<label>air javelin</label>
+	<description>An air thrust in high velocity, resulting in a powerful blast of wind.</description>	
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>VisEffects</altitudeLayer>
+	<drawOffscreen>true</drawOffscreen>
+	<graphicData>
+		<texPath>Effects/air_javelin_projectile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	<projectile>
+		<extraDamages>
+		<li>
+         <def>Stun</def>
+         <amount>5</amount>
+		</li>
+		</extraDamages>
+		<damageAmountBase>17</damageAmountBase>
+		<damageDef>VPEStunskip_Air_Javelin_DamageDef</damageDef>
+		<stoppingPower>5</stoppingPower>
+		<speed>75</speed>
+		<screenShakeFactor>2</screenShakeFactor>
+	</projectile>
+	<comps>
+		<li Class="VanillaPsycastsExpanded.CompProperties_FleckEmitter">
+		 <fleck>VPE_Stunskip_AirPuff</fleck>
+		 <emissionInterval>1</emissionInterval>
+		 <scale>1</scale>
+		</li>
+	</comps>
+	</ThingDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_Stunskip_Barrage_Base">
+		<defName>VPE_Air_Javelin</defName>
+		<label>air javelin</label>
+		<description>Thrust the air with extreme velocity with the help of psychically-enhanced aerodynamic manipulation, propelling a high-damaging compressed spear of wind that can knock targets back several meters away. Exceptional against walls and buildings. A psychically-stronger psycaster will result in more range and higher damage.</description>
+		<iconPath>Abilities/stunskip_air_javelin</iconPath>
+		<abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
+		<castTime>60</castTime>
+		<castTimeStatOffsets>
+			<PsychicSensitivity>-10</PsychicSensitivity>
+		</castTimeStatOffsets>
+		<castSound>VPEStunskip_Air_Barrage</castSound>
+		<cooldownTime>360</cooldownTime>
+		<cooldownTimeStatOffsets>
+			<PsychicSensitivity>-20</PsychicSensitivity>
+		</cooldownTimeStatOffsets>
+		<showUndrafted>false</showUndrafted>
+		<range>5.9</range>	
+		<rangeStatOffsets>
+        <PsychicSensitivity>2</PsychicSensitivity>
+        </rangeStatOffsets>		
+		<targetingParameters>
+          <canTargetPawns>true</canTargetPawns>
+          <canTargetBuildings>true</canTargetBuildings>
+		  <canTargetMechs>true</canTargetMechs>
+	    </targetingParameters>
+	    <power>17</power>	  
+	    <powerStatFactors>
+          <PsychicSensitivity>1</PsychicSensitivity>
+        </powerStatFactors>	  
+	    <targetMode>Pawn</targetMode>
+	    <modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			  <path>VPEStunskipPath</path>
+			  <level>2</level>
+			  <order>3</order>
+			  <psyfocusCost>0.16</psyfocusCost>
+			  <entropyGain>30</entropyGain>
+			  <prerequisites>
+				<li>VPE_EnhancedPerception</li>
+			  </prerequisites>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Projectile">
+			  <projectile>VPE_Air_Javelin_Projectile</projectile>
+			</li>
+        </modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+</Defs>

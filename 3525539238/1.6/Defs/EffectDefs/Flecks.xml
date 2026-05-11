@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   
+	<FleckDef ParentName="FleckGlowDistortBackground">
+    <defName>VPE_Stunscast_Effect1</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <fadeOutTime>0.00</fadeOutTime>
+    <solidTime>0.07</solidTime>
+    <graphicData>
+      <texPath>Effects/stunskip_teleport_fx</texPath>
+      <shaderType>Transparent</shaderType>
+	  <shaderParameters>
+        <_brightnessMultiplier>-10</_brightnessMultiplier>
+      </shaderParameters>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckGlowDistortBackground">
+    <defName>VPE_Stunscast_Effect2</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>FogOfWar</altitudeLayer>
+	<fadeOutTime>0.04</fadeOutTime>
+	<solidTime>0.02</solidTime>
+    <fadeInTime>0.04</fadeInTime>
+	<growthRate>175</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+		<_DistortionTex>/Things/Mote/PsychicDistortionCurrents</_DistortionTex>
+		<_NoiseTex>/Things/Mote/PsycastNoise</_NoiseTex>
+        <_distortionIntensity>2</_distortionIntensity>
+        <_brightnessMultiplier>5</_brightnessMultiplier>
+      </shaderParameters>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckGlowDistortBackground">
+    <defName>VPE_Deception_World_Distort</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>Skyfaller</altitudeLayer>
+    <fadeInTime>0.02</fadeInTime>
+    <fadeOutTime>0.75</fadeOutTime>
+    <solidTime>0</solidTime>
+    <growthRate>50</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+		<_DistortionTex>/Things/Mote/PsychicDistortionCurrents</_DistortionTex>
+		<_NoiseTex>/Things/Mote/PsycastNoise</_NoiseTex>
+        <_distortionIntensity>1</_distortionIntensity>
+        <_brightnessMultiplier>1.15</_brightnessMultiplier>
+      </shaderParameters>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase">
+		<defName>VPE_Stunskip_Distortion</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.02</fadeInTime>
+		<fadeOutTime>0.5</fadeOutTime>
+		<solidTime>0.05</solidTime>
+		<growthRate>40</growthRate>
+		<graphicData>
+			<graphicClass>Graphic_FleckPulse</graphicClass>
+			<texPath>Things/Mote/Black</texPath>
+			<shaderType>MoteLargeDistortionWave</shaderType>
+			<renderInstanced>true</renderInstanced>
+			<shaderParameters>
+				<_DistortionTex>/Things/Mote/PsychicDistortionCurrents</_DistortionTex>
+				<_NoiseTex>/Things/Mote/PsycastNoise</_NoiseTex>
+				<_distortionIntensity>0.15</_distortionIntensity>
+				<_brightnessMultiplier>0</_brightnessMultiplier>
+			</shaderParameters>
+			<drawSize>1</drawSize>
+		</graphicData>
+	</FleckDef>
+	
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>VPE_Stunskip_AirPuff</defName>
+		<graphicData>
+		  <texPath>Things/Mote/AirPuff</texPath>
+		  <renderInstanced>true</renderInstanced>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.05</fadeInTime>
+		<solidTime>0.3</solidTime>
+		<fadeOutTime>0.5</fadeOutTime>
+	</FleckDef>
+	
+	<EffecterDef>
+		<defName>VPE_Stunskip_AirPuffEffecter</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<fleckDef>VPE_Stunskip_AirPuff</fleckDef>
+				<ticksBetweenMotes>18</ticksBetweenMotes>
+				<positionOffset>(0, 0, -0.5)</positionOffset>
+				<scale>1.0~1.0</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<absoluteAngle>true</absoluteAngle>
+				<angle>30~70</angle>
+				<speed>0.2~0.35</speed>
+			</li>
+		</children>
+	</EffecterDef>
+  
+</Defs>
