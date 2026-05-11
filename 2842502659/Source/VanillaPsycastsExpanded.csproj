@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7067403D-AB8A-49F1-814A-F08C4EA18756}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VanillaPsycastsExpanded</RootNamespace>
+    <AssemblyName>VanillaPsycastsExpanded</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="AlienRace" />
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="VEF" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="--f__AnonymousDelegate0.cs" />
+    <Compile Include="AbilityExtensionPsycastUtility.cs" />
+    <Compile Include="AbilityExtension_AbilityOffsetPrisonerResistance.cs" />
+    <Compile Include="AbilityExtension_CastPsychicSoothe.cs" />
+    <Compile Include="AbilityExtension_Flee.cs" />
+    <Compile Include="AbilityExtension_ForceJobOnTarget.cs" />
+    <Compile Include="AbilityExtension_ForceJobOnTargetBase.cs" />
+    <Compile Include="AbilityExtension_GameCondition.cs" />
+    <Compile Include="AbilityExtension_GiveInspiration.cs" />
+    <Compile Include="AbilityExtension_GiveMentalState.cs" />
+    <Compile Include="AbilityExtension_GiveTrait.cs" />
+    <Compile Include="AbilityExtension_JoinFaction.cs" />
+    <Compile Include="AbilityExtension_MindWipe.cs" />
+    <Compile Include="AbilityExtension_Neuroquake.cs" />
+    <Compile Include="AbilityExtension_Psycast.cs" />
+    <Compile Include="AbilityExtension_PsycastWordOfSerenity.cs" />
+    <Compile Include="AbilityExtension_PsychicComa.cs" />
+    <Compile Include="AbilityExtension_SpawnSnowAround.cs" />
+    <Compile Include="AbilityExtension_SpawnTemperatureArea.cs" />
+    <Compile Include="AbilityExtension_TransferEntropy.cs" />
+    <Compile Include="AbilityExtension_WordOfLove.cs" />
+    <Compile Include="Ability_AggressiveHeatDump.cs" />
+    <Compile Include="Ability_BerserkPulse.cs" />
+    <Compile Include="Ability_ConsumeBodies.cs" />
+    <Compile Include="Ability_Corpsetalk.cs" />
+    <Compile Include="Ability_DrainPsyessence.cs" />
+    <Compile Include="Ability_FrostRay.cs" />
+    <Compile Include="Ability_GoodwillImpact.cs" />
+    <Compile Include="Ability_GroupLink.cs" />
+    <Compile Include="Ability_GuardianSkipBarrier.cs" />
+    <Compile Include="Ability_IceBlock.cs" />
+    <Compile Include="Ability_IceBreath.cs" />
+    <Compile Include="Ability_IceWall.cs" />
+    <Compile Include="Ability_Killskip.cs" />
+    <Compile Include="Ability_NeuralHeatDetonation.cs" />
+    <Compile Include="Ability_ParalysisPulse.cs" />
+    <Compile Include="Ability_PowerLeap.cs" />
+    <Compile Include="Ability_PsychicComa.cs" />
+    <Compile Include="Ability_PsychicShock.cs" />
+    <Compile Include="Ability_Resurrect.cs" />
+    <Compile Include="Ability_ReunionFarskip.cs" />
+    <Compile Include="Ability_SnapFreeze.cs" />
+    <Compile Include="Ability_SpawnSkeleton.cs" />
+    <Compile Include="Ability_StealVitality.cs" />
+    <Compile Include="Ability_TargetCorpse.cs" />
+    <Compile Include="Ability_WordOf.cs" />
+    <Compile Include="BackCompatibilityConverter_Constructs.cs" />
+    <Compile Include="BackCompatibilityConverter_Psytrainers.cs" />
+    <Compile Include="Chronopath\AbilityExtension_Age.cs" />
+    <Compile Include="Chronopath\AbilityExtension_Foretelling.cs" />
+    <Compile Include="Chronopath\AbilityExtension_ImproveRelations.cs" />
+    <Compile Include="Chronopath\AbilityExtension_ReduceResistance.cs" />
+    <Compile Include="Chronopath\Ability_AdvanceSeason.cs" />
+    <Compile Include="Chronopath\Ability_Finish.cs" />
+    <Compile Include="Chronopath\Ability_MaturePlants.cs" />
+    <Compile Include="Chronopath\Ability_Meditate.cs" />
+    <Compile Include="Chronopath\Ability_TimeQuake.cs" />
+    <Compile Include="Chronopath\Ability_TimeSphere.cs" />
+    <Compile Include="Chronopath\GameCondition_RaidPause.cs" />
+    <Compile Include="Chronopath\GameCondition_TimeQuake.cs" />
+    <Compile Include="Chronopath\GameCondition_TimeSnow.cs" />
+    <Compile Include="Chronopath\ThoughtWorker_TimeQuake.cs" />
+    <Compile Include="Chronopath\TimeSphere.cs" />
+    <Compile Include="Command_Ability_Psycast.cs" />
+    <Compile Include="CompAbilities_GetGizmos_Patch.cs" />
+    <Compile Include="CompBreakLink.cs" />
+    <Compile Include="CompFleckEmitter.cs" />
+    <Compile Include="CompMelter.cs" />
+    <Compile Include="CompProperties_BreakLink.cs" />
+    <Compile Include="CompProperties_FleckEmitter.cs" />
+    <Compile Include="CompProperties_SetStoneColour.cs" />
+    <Compile Include="CompProperties_UseEffect_Psytrainer.cs" />
+    <Compile Include="CompPsytrainer.cs" />
+    <Compile Include="CompSetStoneColour.cs" />
+    <Compile Include="Conflagrator\Ability_FireTornado.cs" />
+    <Compile Include="Conflagrator\FireBeam.cs" />
+    <Compile Include="Conflagrator\FireTornado.cs" />
+    <Compile Include="Conflagrator\HediffComp_FireShield.cs" />
+    <Compile Include="DeathActionWorker_RockChunk.cs" />
+    <Compile Include="DeathActionWorker_Skeleton.cs" />
+    <Compile Include="DeathActionWorker_SlagChunk.cs" />
+    <Compile Include="DebugHelpers.cs" />
+    <Compile Include="DebugToolsPawns_GivePsylink.cs" />
+    <Compile Include="Dialog_EditPsysets.cs" />
+    <Compile Include="Empath\AbilityExtension_EnergyDump.cs" />
+    <Compile Include="FixedTemperatureZone.cs" />
+    <Compile Include="FocusStrengthOffset_NearbyOfTechlevel.cs" />
+    <Compile Include="FocusStrengthOffset_ResearchSpeed.cs" />
+    <Compile Include="GameComponent_PsycastsManager.cs" />
+    <Compile Include="GenRadialCached.cs" />
+    <Compile Include="GenStep_EltexMeteor.cs" />
+    <Compile Include="GenTemperature_TryGetTemperatureForCell_Patch.cs" />
+    <Compile Include="GlobalControls_TemperatureString_Patch.cs" />
+    <Compile Include="GoodwillImpactDelayed.cs" />
+    <Compile Include="Graphics\GraphicData_Animated.cs" />
+    <Compile Include="Graphics\Graphic_Animated.cs" />
+    <Compile Include="Graphics\Graphic_AnimatedMote.cs" />
+    <Compile Include="Graphics\Graphic_FleckCollection.cs" />
+    <Compile Include="Graphics\Graphic_Fleck_Animated.cs" />
+    <Compile Include="Graphics\HediffCompProperties_Mote.cs" />
+    <Compile Include="Graphics\HediffComp_MoteOverHead.cs" />
+    <Compile Include="Graphics\Projectile_Pointing.cs" />
+    <Compile Include="Harmonist\Ability_HealthSwap.cs" />
+    <Compile Include="Harmonist\Ability_HeatFocus.cs" />
+    <Compile Include="Harmonist\Ability_LocationSwap.cs" />
+    <Compile Include="Harmonist\Ability_LuckTransfer.cs" />
+    <Compile Include="Harmonist\Ability_RandomEvent.cs" />
+    <Compile Include="Harmonist\Ability_Skillroll.cs" />
+    <Compile Include="Harmonist\Ability_TransmuteItem.cs" />
+    <Compile Include="Harmonist\Ability_TransmuteStone.cs" />
+    <Compile Include="Harmonist\HediffComp_MindControl.cs" />
+    <Compile Include="HarmonyPatches\HarmonyInit.cs" />
+    <Compile Include="HarmonyPatches\ListerThings_EverListable_Patch.cs" />
+    <Compile Include="HarmonyPatches\PawnUtility_ShouldSendNotificationAbout_Patch.cs" />
+    <Compile Include="HarmonyPatches\ThingDef_HasThingIDNumber_Patch.cs" />
+    <Compile Include="HealthUtility_GetPartConditionLabel_Patch.cs" />
+    <Compile Include="HediffCompProperties_DisappearsOnDespawn.cs" />
+    <Compile Include="HediffCompProperties_DisappearsOnDowned.cs" />
+    <Compile Include="HediffCompProperties_PlaySound.cs" />
+    <Compile Include="HediffCompProperties_SpawnFilth.cs" />
+    <Compile Include="HediffCompProperties_SpawnMote.cs" />
+    <Compile Include="HediffComp_DisappearsOnDespawn.cs" />
+    <Compile Include="HediffComp_DisappearsOnDowned.cs" />
+    <Compile Include="HediffComp_PlaySound.cs" />
+    <Compile Include="HediffComp_ShouldBeDestroyed.cs" />
+    <Compile Include="HediffComp_SpawnFilth.cs" />
+    <Compile Include="HediffComp_SpawnMote.cs" />
+    <Compile Include="HediffSet_BleedRateTotal_Patch.cs" />
+    <Compile Include="HediffSet_DirtyCache_Patch.cs" />
+    <Compile Include="HediffUtility_CanHealNaturally_Patch.cs" />
+    <Compile Include="Hediff_BlizzardSource.cs" />
+    <Compile Include="Hediff_BodiesConsumed.cs" />
+    <Compile Include="Hediff_CorpseTalk.cs" />
+    <Compile Include="Hediff_Deathshield.cs" />
+    <Compile Include="Hediff_GroupLink.cs" />
+    <Compile Include="Hediff_GuardianSkipBarrier.cs" />
+    <Compile Include="Hediff_Hallucination.cs" />
+    <Compile Include="Hediff_IceBlock.cs" />
+    <Compile Include="Hediff_IceShield.cs" />
+    <Compile Include="Hediff_Liferot.cs" />
+    <Compile Include="Hediff_NoMerge.cs" />
+    <Compile Include="Hediff_Overlay.cs" />
+    <Compile Include="Hediff_Overshield.cs" />
+    <Compile Include="Hediff_PsycastAbilities.cs" />
+    <Compile Include="Hediff_PsychicDrone.cs" />
+    <Compile Include="Hediff_PsychicPain.cs" />
+    <Compile Include="Hediff_Psylink_ChangeLevel.cs" />
+    <Compile Include="Hediff_Psylink_PostAdd.cs" />
+    <Compile Include="Hediff_Psylink_TryGiveAbilityOfLevel.cs" />
+    <Compile Include="Hediff_RegrowLimbs.cs" />
+    <Compile Include="Hediff_Thrall.cs" />
+    <Compile Include="IAnimationOneTime.cs" />
+    <Compile Include="IceBreatheProjectile.cs" />
+    <Compile Include="IChannelledPsycast.cs" />
+    <Compile Include="IMinHeatGiver.cs" />
+    <Compile Include="IncidentWorker_EltexMeteorite.cs" />
+    <Compile Include="IncidentWorker_RaidEnemy_GetLetterText_Patch.cs" />
+    <Compile Include="JobDriver_Reign_Patch.cs" />
+    <Compile Include="JobDriver_StandFreeze.cs" />
+    <Compile Include="JobGiver_Clean.cs" />
+    <Compile Include="JobGiver_Flee.cs" />
+    <Compile Include="JobGiver_Flick.cs" />
+    <Compile Include="JoyUtility_TryGainRecRoomThought_Patch.cs" />
+    <Compile Include="JumpingPawn.cs" />
+    <Compile Include="Listing_Standard_Ext.cs" />
+    <Compile Include="MapComponent_PsycastsManager.cs" />
+    <Compile Include="MaterialAllocator.cs" />
+    <Compile Include="MeditationFocusAutopatcher.cs" />
+    <Compile Include="MeditationFocusDef_EnablingThingsExplanation_Patch.cs" />
+    <Compile Include="MeditationFocusExtension.cs" />
+    <Compile Include="MeditationFocusTypeAvailabilityCache_PawnCanUse_Patch.cs" />
+    <Compile Include="MeditationUtilities.cs" />
+    <Compile Include="MentalState_FriendlyManhunter.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="MinHeatPatches.cs" />
+    <Compile Include="ModCompatibility.cs" />
+    <Compile Include="MoteAttachedMovingAround.cs" />
+    <Compile Include="MoteAttachedOneTime.cs" />
+    <Compile Include="MoteAttachedScaled.cs" />
+    <Compile Include="MoteBetween.cs" />
+    <Compile Include="MoteCastBubble.cs" />
+    <Compile Include="Nightstalker\Ability_Assassinate.cs" />
+    <Compile Include="Nightstalker\Ability_TeleportDark.cs" />
+    <Compile Include="Nightstalker\Ability_WorldTeleportNight.cs" />
+    <Compile Include="Nightstalker\CompDarkener.cs" />
+    <Compile Include="Nightstalker\CompProperties_Darkness.cs" />
+    <Compile Include="Nightstalker\Decoy.cs" />
+    <Compile Include="Nightstalker\DecoyOverlayUtility.cs" />
+    <Compile Include="Nightstalker\GameCondition_IntenseShadows.cs" />
+    <Compile Include="Nightstalker\HediffComp_DissapearsInLight.cs" />
+    <Compile Include="Nightstalker\HediffComp_DissapearsOnAttack.cs" />
+    <Compile Include="Nightstalker\Hediff_Darkvision.cs" />
+    <Compile Include="Nightstalker\Hediff_ShadowFocus.cs" />
+    <Compile Include="PathUnlockData.cs" />
+    <Compile Include="PawnGen_Patch.cs" />
+    <Compile Include="PawnGroupMaker_CanGenerateFrom_Patch.cs" />
+    <Compile Include="PawnGroupMaker_PsycasterRaid.cs" />
+    <Compile Include="PawnKindAbilityExtension_Psycasts.cs" />
+    <Compile Include="PawnRenderNode_RockConstruct.cs" />
+    <Compile Include="Pawn_AbilityTracker_Notify_TemporaryAbilitiesChanged_Patch.cs" />
+    <Compile Include="Pawn_EntropyTracker_GainPsyfocus_Postfix.cs" />
+    <Compile Include="Pawn_EntropyTracker_GetGizmo_Prefix.cs" />
+    <Compile Include="Pawn_EntropyTracker_OffsetPsyfocusDirectly_Postfix.cs" />
+    <Compile Include="Pawn_EntropyTracker_RechargePsyfocus_Postfix.cs" />
+    <Compile Include="Pawn_GeneTracker_Notify_GenesChanged_Patch.cs" />
+    <Compile Include="Pawn_HealthTracker_AddHediff_Patch.cs" />
+    <Compile Include="Pawn_HealthTracker_ShouldBeDeadFromLethalDamageThreshold_Pat.cs" />
+    <Compile Include="Pawn_JobTracker_StartJob_Patch.cs" />
+    <Compile Include="Pawn_Kill_Patch.cs" />
+    <Compile Include="Pawn_NeedsTracker_ShouldHaveNeed_Patch.cs" />
+    <Compile Include="Pawn_PsychicEntropyTracker_OptimizeGetters_Patch.cs" />
+    <Compile Include="Pawn_SkillTracker_Learn_Patch.cs" />
+    <Compile Include="Pawn_Spawn_Patches.cs" />
+    <Compile Include="Projectile_FrostRay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PsycasterPathDef.cs" />
+    <Compile Include="PsycastSettings.cs" />
+    <Compile Include="PsycastsMod.cs" />
+    <Compile Include="PsycastUtility.cs" />
+    <Compile Include="PsySet.cs" />
+    <Compile Include="RaidStrategyWorker_ImmediateAttack_Psycasters.cs" />
+    <Compile Include="RitualOutcomeEffectWorker_Bestowing_Apply_Patch.cs" />
+    <Compile Include="RoomStatDef_GetScoreStageIndex_Patch.cs" />
+    <Compile Include="Skipmaster\AbilityExtension_Clamor.cs" />
+    <Compile Include="Skipmaster\AbilityExtension_Wallraise.cs" />
+    <Compile Include="Skipmaster\Ability_Chunkskip.cs" />
+    <Compile Include="Skipmaster\Ability_Skipdoor.cs" />
+    <Compile Include="Skipmaster\Ability_Smokepop.cs" />
+    <Compile Include="Skipmaster\Ability_Teleport.cs" />
+    <Compile Include="Skipmaster\Ability_Wallraise.cs" />
+    <Compile Include="Skipmaster\Ability_Waterskip.cs" />
+    <Compile Include="Skipmaster\Ability_WorldTeleport.cs" />
+    <Compile Include="Skipmaster\Skipdoor.cs" />
+    <Compile Include="Skipmaster\SkipdoorPatches.cs" />
+    <Compile Include="SoulFromSky.cs" />
+    <Compile Include="Stance_Stand.cs" />
+    <Compile Include="Staticlord\Ability_ChainBolt.cs" />
+    <Compile Include="Staticlord\Ability_Flashstorm.cs" />
+    <Compile Include="Staticlord\Ability_Hurricane.cs" />
+    <Compile Include="Staticlord\Ability_Recharge.cs" />
+    <Compile Include="Staticlord\Ability_Thunderbolt.cs" />
+    <Compile Include="Staticlord\BallLightning.cs" />
+    <Compile Include="Staticlord\ChainBolt.cs" />
+    <Compile Include="Staticlord\Command_AbilityToggle.cs" />
+    <Compile Include="Staticlord\GameCondition_PsychicFlashstorm.cs" />
+    <Compile Include="Staticlord\HediffComp_Hurricane.cs" />
+    <Compile Include="Staticlord\HediffComp_Recharge.cs" />
+    <Compile Include="Staticlord\Hediff_Vortexed.cs" />
+    <Compile Include="Staticlord\HurricaneMaker.cs" />
+    <Compile Include="Staticlord\IAbilityToggle.cs" />
+    <Compile Include="Staticlord\TexHurricane.cs" />
+    <Compile Include="Staticlord\Vortex.cs" />
+    <Compile Include="Staticlord\WeatherOverlay_RainSideways.cs" />
+    <Compile Include="StatPart_Focus.cs" />
+    <Compile Include="StatPart_Group.cs" />
+    <Compile Include="StatPart_NearbyFoci.cs" />
+    <Compile Include="StatPart_NearbyWealth.cs" />
+    <Compile Include="StatPart_PsycastBodiesConsumed.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RequiresLocationAttribute.cs" />
+    <Compile Include="Technomancer\Ability_AffectMechs.cs" />
+    <Compile Include="Technomancer\Ability_ConjureHeatPearls.cs" />
+    <Compile Include="Technomancer\Ability_Construct_Rock.cs" />
+    <Compile Include="Technomancer\Ability_Construct_Steel.cs" />
+    <Compile Include="Technomancer\Ability_IncreaseQuality.cs" />
+    <Compile Include="Technomancer\Ability_Mend.cs" />
+    <Compile Include="Technomancer\Ability_Power.cs" />
+    <Compile Include="Technomancer\Ability_Psyring.cs" />
+    <Compile Include="Technomancer\Ability_ReverseEngineer.cs" />
+    <Compile Include="Technomancer\CompHaywire.cs" />
+    <Compile Include="Technomancer\DamageWorker_NeuralHeatBlast.cs" />
+    <Compile Include="Technomancer\Dialog_CreatePsyring.cs" />
+    <Compile Include="Technomancer\HaywireManager.cs" />
+    <Compile Include="Technomancer\HediffComp_Haywire.cs" />
+    <Compile Include="Technomancer\HediffComp_InfinitePower.cs" />
+    <Compile Include="Technomancer\MechUtility.cs" />
+    <Compile Include="Technomancer\Pawn_Construct.cs" />
+    <Compile Include="Technomancer\Psyring.cs" />
+    <Compile Include="Technomancer\PsyringExclusionExtension.cs" />
+    <Compile Include="Technomancer\PsyringUtilities.cs" />
+    <Compile Include="ThingDefGenerator_Neurotrainer_ImpliedThingDefs_Patch.cs" />
+    <Compile Include="ThingSetMaker_Meteorite_Reset.cs" />
+    <Compile Include="ThinkNode_Construct.cs" />
+    <Compile Include="ThoughtWorker_Ascetic_CurrentStateInternal_Patch.cs" />
+    <Compile Include="ThoughtWorker_Cold_CurrentStateInternal.cs" />
+    <Compile Include="ThoughtWorker_Greedy_CurrentStateInternal_Patch.cs" />
+    <Compile Include="ThoughtWorker_HospitalPatientRoomStats_CurrentStateInternal_.cs" />
+    <Compile Include="ThoughtWorker_PsychicDrone_CurrentStateInternal_Patch.cs" />
+    <Compile Include="ThoughtWorker_RoomImpressiveness_CurrentStateInternal_Patch.cs" />
+    <Compile Include="Toils_Ingest_FinalizeIngest_Patch.cs" />
+    <Compile Include="Toils_LayDown_ApplyBedThoughts_Patch.cs" />
+    <Compile Include="TradeDeal_TryExecute_Patch.cs" />
+    <Compile Include="Transferable_CanAdjustBy_Patch.cs" />
+    <Compile Include="UI\Command_ActionWithFloat.cs" />
+    <Compile Include="UI\Dialog_Psyset.cs" />
+    <Compile Include="UI\Dialog_RenamePsyset.cs" />
+    <Compile Include="UI\ITab_Pawn_Psycasts.cs" />
+    <Compile Include="UI\PsycastsUIUtility.cs" />
+    <Compile Include="UI\PsychicStatusGizmo.cs" />
+    <Compile Include="UI\TexPsycasts.cs" />
+    <Compile Include="VerbProperties_AdjustedMeleeDamageAmount_Patch.cs" />
+    <Compile Include="VPE_DefOf.cs" />
+    <Compile Include="Wildspeaker\Ability_Animal.cs" />
+    <Compile Include="Wildspeaker\Ability_EssenceTransfer.cs" />
+    <Compile Include="Wildspeaker\Ability_ShrineShield.cs" />
+    <Compile Include="Wildspeaker\Ability_SummonPack.cs" />
+    <Compile Include="Wildspeaker\BrambleSpawner.cs" />
+    <Compile Include="Wildspeaker\CompProperties_PlaySound.cs" />
+    <Compile Include="Wildspeaker\Comp_PlaySound.cs" />
+    <Compile Include="Wildspeaker\Hediff_AnimalShield.cs" />
+    <Compile Include="Wildspeaker\Hediff_Essence.cs" />
+    <Compile Include="Wildspeaker\JobDriver_EssenceTransfer.cs" />
+    <Compile Include="Wildspeaker\MentalState_ManhunterTerritorial.cs" />
+    <Compile Include="Wildspeaker\PlantSpawner.cs" />
+    <Compile Include="Wildspeaker\TreeSpawner.cs" />
+    <Compile Include="Wildspeaker\WildPlantSpawner.cs" />
+    <Compile Include="WoundWithShader.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
